@@ -91,7 +91,7 @@ export default function GallerySection() {
 
   return (
     <div id="gallery" className="max-w-7xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-center mb-8">Graduated Students From Our Latest Batch</h1>
+      <h1 className="text-4xl font-bold text-center mb-8">Our Recent Projects</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {galleryImages.map((graduate, index) => (
           <GraduateCard key={graduate.id} graduate={graduate} onClick={() => setSelectedIndex(index)} />
